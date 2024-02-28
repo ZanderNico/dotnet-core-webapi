@@ -6,6 +6,9 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//Calling StartupExtensions.cs
+builder.Services.ConfigureServices();
+
 // Add services to the container.
 
 //I RELOCATE THIS IN THE StartupExtensions.cs
